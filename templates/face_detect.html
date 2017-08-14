@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Detect a Face</title>
+		<style type="text/css">
+			video, canvas{
+				margin-left: 200px;
+				margin-top: 100px;
+				border-width: 1px;
+				border-color: #333;
+			}
+		</style>
+		<script src="{{url_for('static', filename='jquery-1.11.1.min.js')}}"></script>
+		<script src="{{url_for('static', filename='jquery.ccv.js')}}"></script>
+		<script src="{{url_for('static', filename='jquery.face.js')}}"></script>
+		<script src="{{url_for('static', filename='jquery.facedetection.js')}}"></script>
+	</head>
+	<body>
+		<h1>Face Tracking Happens Here!</h1>
+		<video id="video" width="320" height="240"></video>
+		<canvas id="canvas" width="320" height="240"></canvas>
+		<script src="{{url_for('static', filename='detect.js')}}"></script>
+	</body>
+</html>

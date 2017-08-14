@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flask App</title>
+</head>
+<body>
+	<h1>Hello, World!</h1>
+	<form action="{{url_for('search')}}" method="get">
+		<input type="text" name="q" placeholder="Search for something...">
+		<input type="submit" value="Submit">
+	</form>
+	<hr>
+	<h3>You previously searched for:</h3>
+	{% if previous %}
+		<p>{{previous}}</p>
+	{% else %}
+		<p><i>nothing</i></p>
+	{% endif %}
+</body>
+</html>
